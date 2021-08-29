@@ -15,6 +15,7 @@ public class Day1_Day_of_the_Programmer {
         
         //1. First
         // 2. Second
+        // 2.5 I changed something
         // 3. Third
         public static void main(String[] args) {
                 Scanner in = new Scanner(System.in);
@@ -33,12 +34,16 @@ public class Day1_Day_of_the_Programmer {
                 System.out.println(output);
         }
 
+        public static boolean isLeapYearAfter1917(int year) {
+                return (year % 400 == 0 
+                || (year % 4 == 0 
+                && year % 100 != 0));
+        }
+
         public static boolean isLeapYearBefore1917(int year) {
                 return year % 4 == 0;
         }
 
-        public static boolean isLeapYearAfter1917(int year) {
-                return (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0));
-        }
+        
 
 }
