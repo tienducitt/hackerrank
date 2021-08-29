@@ -16,8 +16,6 @@ public class Day1_Day_of_the_Programmer {
         public static void main(String[] args) {
                 Scanner in = new Scanner(System.in);
                 int y = in.nextInt();
-                // your code goes here
-
                 if(y == 1918) {
                         System.out.println("31.08.1918");
                         return;
@@ -28,12 +26,8 @@ public class Day1_Day_of_the_Programmer {
                 } else {
                         isLeapYear = isLeapYearAfter1917(y);
                 }
-                
-                if(isLeapYear) {
-                        System.out.println("12.09." + y);
-                } else {
-                        System.out.println("13.09." + y);
-                }
+                String output = (isLeapYear ? "12.09.": "13.09.") + y;
+                System.out.println(output);
         }
 
         public static boolean isLeapYearBefore1917(int year) {
