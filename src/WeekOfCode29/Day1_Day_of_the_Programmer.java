@@ -15,8 +15,20 @@ public class Day1_Day_of_the_Programmer {
         
         //1. First
         // 2. Second
+<<<<<<< HEAD
         // 2.5 I changed something
+=======
+        // 2.6 Changed code
+>>>>>>> e3a083bafa13b111c0bbebefdc061757cef8345f
         // 3. Third
+
+        public static boolean isLeapYearAfter1917(int year) {
+                return 
+                (year % 400 == 0 
+                || (year % 4 
+                == 0 && year % 100 != 0));
+        }
+
         public static void main(String[] args) {
                 Scanner in = new Scanner(System.in);
                 int y = in.nextInt();
@@ -44,6 +56,9 @@ public class Day1_Day_of_the_Programmer {
                 return year % 4 == 0;
         }
 
+<<<<<<< HEAD
         
+=======
+>>>>>>> e3a083bafa13b111c0bbebefdc061757cef8345f
 
 }
